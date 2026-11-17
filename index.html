@@ -26,8 +26,7 @@
       "owns": [
         {"@type": "SoftwareApplication", "name": "Phone Repair POS", "url": "https://phonerepairpos.app", "operatingSystem": "iOS, iPadOS", "applicationCategory": "BusinessApplication", "description": "Repair tickets and point of sale for phone repair shops."},
         {"@type": "SoftwareApplication", "name": "Podcast Alarm", "url": "https://podcastalarm.app", "operatingSystem": "iOS", "applicationCategory": "LifestyleApplication", "description": "Alarm clock that wakes you up to your favourite podcast."},
-        {"@type": "SoftwareApplication", "name": "Gifable", "url": "https://gifableapp.com", "operatingSystem": "macOS", "applicationCategory": "MultimediaApplication", "description": "Record your Mac screen as a GIF."},
-        {"@type": "SoftwareApplication", "name": "AI Decorator", "url": "https://apps.apple.com/gb/app/interior-design-ai-decoration/id6446038210", "operatingSystem": "iOS", "applicationCategory": "LifestyleApplication", "description": "Redesign a room from a photo with AI."}
+        {"@type": "SoftwareApplication", "name": "Gifable", "url": "https://gifableapp.com", "operatingSystem": "macOS", "applicationCategory": "MultimediaApplication", "description": "Record your Mac screen as a GIF."}
       ]
     },
     {
@@ -38,16 +37,17 @@
       "worksFor": {"@id": "https://boxroomsoftware.com/#org"},
       "description": "Staff-level iOS engineer with 10+ years building iOS apps professionally, plus web products in React, Next.js and Node. Author of the video course Advanced iOS Development with Swift 4.x (Udemy, O'Reilly, Packt).",
       "knowsAbout": ["Swift", "iOS", "SwiftUI", "React", "Next.js", "Node.js", "TypeScript", "Firebase", "AI integration"],
-      "sameAs": ["https://www.linkedin.com/in/jonathanwilson0/", "https://github.com/JonathanWilson1"]
+      "sameAs": ["https://www.linkedin.com/in/jonathanwilson0/", "https://github.com/JonathanWilson1"],
+      "owns": {"@type": "SoftwareApplication", "name": "AI Decorator", "url": "https://apps.apple.com/gb/app/interior-design-ai-decoration/id6446038210", "operatingSystem": "iOS", "applicationCategory": "LifestyleApplication", "description": "Redesign a room from a photo with AI. Currently published by Jonathan Wilson personally."}
     }
   ]
 }
 </script>
 <style>
-:root{--green:#39ff6a;--muted:#2f6b3d;--glow:0 0 4px rgba(57,255,106,.95),0 0 14px rgba(57,255,106,.55),0 0 34px rgba(57,255,106,.25)}
+:root{--green:#39ff6a;--muted:#4f9a62;--glow:0 0 4px rgba(57,255,106,.95),0 0 14px rgba(57,255,106,.55),0 0 34px rgba(57,255,106,.25)}
 *{box-sizing:border-box}
-html,body{margin:0;height:100%;background:#000}
-body{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:44px;padding:16px;overflow:hidden;
+html,body{margin:0;min-height:100%;background:#000}
+body{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:16px;
   font:14px/1.6 ui-monospace,"SF Mono",Menlo,Consolas,monospace;color:var(--green);animation:flicker 6s infinite}
 
 @keyframes flicker{0%,100%{opacity:1}92%{opacity:1}93%{opacity:.82}94%{opacity:1}96%{opacity:.9}97%{opacity:1}}
@@ -78,17 +78,20 @@ a:focus-visible{outline:1px dashed var(--green);outline-offset:6px}
   93%{transform:none}}
 .prompt{color:var(--muted);margin-right:8px}
 
-footer{position:fixed;bottom:16px;left:16px;right:16px;text-align:center;font-size:11px;color:var(--muted);z-index:6}
+footer{padding-top:24px;text-align:center;font-size:11px;color:var(--muted)}
+main{margin:auto 0;display:flex;flex-direction:column;align-items:center;gap:44px}
 
 @media (prefers-reduced-motion:reduce){
   body,.glitch,a::after{animation:none}
   .cube{animation:none;transform:rotateX(-25deg) rotateY(35deg)}}
 </style></head><body>
 <h1 style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">Boxroom Software</h1>
+<main>
 <div class="stage" aria-hidden="true"><div class="cube">
 <div class="face front"></div><div class="face back"></div><div class="face left"></div>
 <div class="face right"></div><div class="face top"></div><div class="face bottom"></div>
 </div></div>
 <div><span class="prompt" aria-hidden="true">&gt;</span><a class="glitch" href="mailto:support@boxroomsoftware.com">support@boxroomsoftware.com</a></div>
-<footer>Boxroom Software Ltd · NI736457</footer>
+</main>
+<footer>Boxroom Software Ltd · Registered in Northern Ireland, no. NI736457</footer>
 </body></html>
