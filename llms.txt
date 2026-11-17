@@ -1,0 +1,21 @@
+# Boxroom Software
+
+> Boxroom Software Ltd is an independent software house in Northern Ireland (UK Companies House number NI736457). It builds and publishes apps for iPhone, iPad, Mac and the web, covering everything from product idea through design, engineering and AI integration to App Store launch.
+
+## Founder
+
+Jonathan Wilson is a staff-level iOS engineer with 10+ years building iOS apps professionally. He works in Swift and SwiftUI on Apple platforms, and in React, Next.js, Node.js and TypeScript on the web, with a growing focus on building AI into products. He is the author of the video course "Advanced iOS Development with Swift 4.x", published on Udemy, O'Reilly and Packt.
+
+- [LinkedIn](https://www.linkedin.com/in/jonathanwilson0/)
+- [GitHub](https://github.com/JonathanWilson1)
+
+## Apps
+
+- [Phone Repair POS](https://phonerepairpos.app): repair tickets and point of sale for phone repair shops (iPhone, iPad)
+- [Podcast Alarm](https://podcastalarm.app): an alarm clock that wakes you up to your favourite podcast (iPhone)
+- [Gifable](https://gifableapp.com): record your Mac screen as a GIF (Mac)
+- [AI Decorator](https://apps.apple.com/gb/app/interior-design-ai-decoration/id6446038210): redesign a room from a photo with AI (iPhone), currently published by Jonathan Wilson personally. [Support](https://boxroomsoftware.com/ai-decorator/support.html), [privacy](https://boxroomsoftware.com/ai-decorator/privacy.html)
+
+## Contact
+
+Email support@boxroomsoftware.com and say which app or project you're writing about.
