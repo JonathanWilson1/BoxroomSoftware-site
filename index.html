@@ -1,21 +1,94 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Boxroom Software</title>
-<meta name="description" content="Boxroom Software Ltd makes small, useful apps for iPhone, iPad and Mac.">
-<style>:root{--bg:#fff;--fg:#1d1d1f;--muted:#6e6e73;--link:#0066cc}@media (prefers-color-scheme:dark){:root{--bg:#000;--fg:#f5f5f7;--muted:#a1a1a6;--link:#4da3ff}}body{background:var(--bg);color:var(--fg);font:17px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;max-width:720px;margin:0 auto;padding:32px 16px 64px}h1{font-size:32px;margin-bottom:4px}h2{font-size:21px;margin-top:32px}a{color:var(--link)}.muted{color:var(--muted)}ul{padding-left:20px}li{margin:6px 0}</style></head><body>
-<h1>Boxroom Software</h1>
-<p class="muted">Small, useful apps for iPhone, iPad and Mac.</p>
+<meta name="description" content="Boxroom Software Ltd is an independent software house in Northern Ireland, founded by Jonathan Wilson, a staff-level iOS engineer with 10+ years' experience. It builds and publishes apps for iPhone, iPad, Mac and the web.">
+<meta name="author" content="Jonathan Wilson">
+<meta name="theme-color" content="#000">
+<link rel="canonical" href="https://boxroomsoftware.com/">
+<link rel="alternate" type="text/markdown" title="About Boxroom Software (for AI agents)" href="/llms.txt">
+<link rel="me" href="https://www.linkedin.com/in/jonathanwilson0/">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://boxroomsoftware.com/#org",
+      "name": "Boxroom Software Ltd",
+      "alternateName": "Boxroom Software",
+      "url": "https://boxroomsoftware.com/",
+      "email": "support@boxroomsoftware.com",
+      "description": "Independent software house building and publishing apps for iPhone, iPad, Mac and the web, from product idea through design, engineering, AI integration and App Store launch.",
+      "identifier": {"@type": "PropertyValue", "propertyID": "UK Companies House number", "value": "NI736457"},
+      "address": {"@type": "PostalAddress", "addressRegion": "Northern Ireland", "addressCountry": "GB"},
+      "founder": {"@id": "https://boxroomsoftware.com/#jonathan"},
+      "knowsAbout": ["iOS development", "Swift", "SwiftUI", "iPadOS", "macOS apps", "React", "Next.js", "Node.js", "AI integration", "App Store Optimization"],
+      "owns": [
+        {"@type": "SoftwareApplication", "name": "Phone Repair POS", "url": "https://phonerepairpos.app", "operatingSystem": "iOS, iPadOS", "applicationCategory": "BusinessApplication", "description": "Repair tickets and point of sale for phone repair shops."},
+        {"@type": "SoftwareApplication", "name": "Podcast Alarm", "url": "https://podcastalarm.app", "operatingSystem": "iOS", "applicationCategory": "LifestyleApplication", "description": "Alarm clock that wakes you up to your favourite podcast."},
+        {"@type": "SoftwareApplication", "name": "Gifable", "url": "https://gifableapp.com", "operatingSystem": "macOS", "applicationCategory": "MultimediaApplication", "description": "Record your Mac screen as a GIF."},
+        {"@type": "SoftwareApplication", "name": "AI Decorator", "url": "https://apps.apple.com/gb/app/interior-design-ai-decoration/id6446038210", "operatingSystem": "iOS", "applicationCategory": "LifestyleApplication", "description": "Redesign a room from a photo with AI."}
+      ]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://boxroomsoftware.com/#jonathan",
+      "name": "Jonathan Wilson",
+      "jobTitle": "Founder & Staff iOS Engineer",
+      "worksFor": {"@id": "https://boxroomsoftware.com/#org"},
+      "description": "Staff-level iOS engineer with 10+ years building iOS apps professionally, plus web products in React, Next.js and Node. Author of the video course Advanced iOS Development with Swift 4.x (Udemy, O'Reilly, Packt).",
+      "knowsAbout": ["Swift", "iOS", "SwiftUI", "React", "Next.js", "Node.js", "TypeScript", "Firebase", "AI integration"],
+      "sameAs": ["https://www.linkedin.com/in/jonathanwilson0/", "https://github.com/JonathanWilson1"]
+    }
+  ]
+}
+</script>
+<style>
+:root{--green:#39ff6a;--muted:#2f6b3d;--glow:0 0 4px rgba(57,255,106,.95),0 0 14px rgba(57,255,106,.55),0 0 34px rgba(57,255,106,.25)}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%;background:#000}
+body{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:44px;padding:16px;overflow:hidden;
+  font:14px/1.6 ui-monospace,"SF Mono",Menlo,Consolas,monospace;color:var(--green);animation:flicker 6s infinite}
 
-<h2>Apps</h2>
-<ul>
-<li><a href="https://phonerepairpos.app">Phone Repair POS</a>: repair tickets and sales for phone repair shops</li>
-<li><a href="https://podcastalarm.app">Podcast Alarm</a>: wake up to your favourite podcast</li>
-<li><a href="https://gifableapp.com">Gifable</a>: make GIFs on your Mac</li>
-<li>AI Decorator: redesign a room from a photo, currently published by Jonathan Wilson (<a href="ai-decorator/support.html">support</a> · <a href="ai-decorator/privacy.html">privacy</a>)</li>
-</ul>
+@keyframes flicker{0%,100%{opacity:1}92%{opacity:1}93%{opacity:.82}94%{opacity:1}96%{opacity:.9}97%{opacity:1}}
 
-<h2>Contact</h2>
-<p>Email <a href="mailto:support@boxroomsoftware.com">support@boxroomsoftware.com</a>. Please say which app you're writing about.</p>
+/* cube */
+.stage{perspective:800px;display:grid;place-items:center;width:260px;height:260px;filter:drop-shadow(0 0 8px rgba(57,255,106,.35))}
+.cube{--s:130px;position:relative;width:var(--s);height:var(--s);transform-style:preserve-3d;animation:tumble 18s linear infinite}
+.face{position:absolute;width:var(--s);height:var(--s);border:1.5px solid var(--green);box-shadow:var(--glow),inset 0 0 18px rgba(57,255,106,.18);
+  background:repeating-linear-gradient(0deg,rgba(57,255,106,.05) 0 1px,transparent 1px 4px)}
+.front{transform:translateZ(calc(var(--s)/2))}
+.back{transform:rotateY(180deg) translateZ(calc(var(--s)/2))}
+.right{transform:rotateY(90deg) translateZ(calc(var(--s)/2))}
+.left{transform:rotateY(-90deg) translateZ(calc(var(--s)/2))}
+.top{transform:rotateX(90deg) translateZ(calc(var(--s)/2))}
+.bottom{transform:rotateX(-90deg) translateZ(calc(var(--s)/2))}
+@keyframes tumble{from{transform:rotateX(-25deg) rotateY(0) rotateZ(8deg)}50%{transform:rotateX(-40deg) rotateY(180deg) rotateZ(-8deg)}to{transform:rotateX(-25deg) rotateY(360deg) rotateZ(8deg)}}
 
-<p class="muted">Boxroom Software Ltd · Registered in Northern Ireland, company number NI736457</p>
+/* email with glitch + cursor */
+a{position:relative;color:var(--green);text-decoration:none;text-shadow:var(--glow);letter-spacing:.04em}
+a::after{content:"";display:inline-block;width:.6em;height:1.05em;margin-left:6px;vertical-align:-3px;background:var(--green);box-shadow:var(--glow);animation:blink 1s steps(1) infinite}
+a:hover{background:var(--green);color:#000;text-shadow:none}
+a:focus-visible{outline:1px dashed var(--green);outline-offset:6px}
+.glitch{animation:glitch 5s infinite}
+@keyframes blink{50%{opacity:0}}
+@keyframes glitch{0%,90%,100%{transform:none;text-shadow:var(--glow)}
+  91%{transform:translate(-2px,0) skewX(-8deg);text-shadow:-2px 0 #ff2a6d,2px 0 #05d9e8}
+  92%{transform:translate(2px,1px);text-shadow:2px 0 #ff2a6d,-2px 0 #05d9e8}
+  93%{transform:none}}
+.prompt{color:var(--muted);margin-right:8px}
+
+footer{position:fixed;bottom:16px;left:16px;right:16px;text-align:center;font-size:11px;color:var(--muted);z-index:6}
+
+@media (prefers-reduced-motion:reduce){
+  body,.glitch,a::after{animation:none}
+  .cube{animation:none;transform:rotateX(-25deg) rotateY(35deg)}}
+</style></head><body>
+<h1 style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">Boxroom Software</h1>
+<div class="stage" aria-hidden="true"><div class="cube">
+<div class="face front"></div><div class="face back"></div><div class="face left"></div>
+<div class="face right"></div><div class="face top"></div><div class="face bottom"></div>
+</div></div>
+<div><span class="prompt" aria-hidden="true">&gt;</span><a class="glitch" href="mailto:support@boxroomsoftware.com">support@boxroomsoftware.com</a></div>
+<footer>Boxroom Software Ltd · NI736457</footer>
 </body></html>
